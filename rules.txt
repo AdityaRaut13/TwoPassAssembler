@@ -1,0 +1,5 @@
+1.The Symbol if written in the complex form like :
+	FOO+CONSTANT or
+	FOO+(CONSTANT)CONSTANT
+  must be without space
+
