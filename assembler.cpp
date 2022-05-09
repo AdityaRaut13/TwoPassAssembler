@@ -251,7 +251,7 @@ void For_AD(std::vector<std::string>& statement,std::ofstream& output_file,int l
  */
 int search_literal_one_pool(std::string literal)
 {
-	for(int i=(littab_ptr-1);i>littab_ptr_assigned;i--)
+	for(int i=(littab_ptr-1);i>=littab_ptr_assigned;i--)
 	{
 		if(LITERAL_TABLE[i].first==literal)
 			return i;
@@ -598,7 +598,7 @@ int main(int argc,char** argv)
 	check_symbol();
 	print();
 	print_literal();
-	print_pool("Poool table : ",POOL_TABLE);
-	machine_code(argv[2],"machine_code_generated.txt");
+	print_pool("Pool table : ",POOL_TABLE);
+	machine_code(argv[2],argv[3]);
 	return 0;
 }

@@ -4,6 +4,7 @@ L1   ADD BREG,B
 	PRINT B+1
 	READ ='5'
 	PRINT ='4' 
+	PRINT ='5'
 	LTORG
 	MULT CREG,X
 	SUB BREG,='5'
